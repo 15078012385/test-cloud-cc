@@ -13,6 +13,7 @@ cd test-cloud-cc
 
 ```
 .
+├── index.html     # 静态 hello world 页面
 ├── README.md      # 项目说明
 ├── CLAUDE.md      # Claude Code 协作说明
 └── .gitignore     # Git 忽略规则

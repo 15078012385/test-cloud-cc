@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>test-cloud-cc Hello</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --bg: #f3f5f8;
+    --surface: #ffffff;
+    --ink: #1a2230;
+    --muted: #5b6678;
+    --line: #d9dee7;
+    --accent: #2f5bd3;
+    --code-bg: #eaeef5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #10141c;
+      --surface: #171c26;
+      --ink: #e6eaf2;
+      --muted: #97a1b3;
+      --line: #2a3140;
+      --accent: #7f9ff5;
+      --code-bg: #1d2330;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #10141c;
+    --surface: #171c26;
+    --ink: #e6eaf2;
+    --muted: #97a1b3;
+    --line: #2a3140;
+    --accent: #7f9ff5;
+    --code-bg: #1d2330;
+  }
+  html, body { height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Bricolage Grotesque", system-ui, -apple-system, "Segoe UI", sans-serif;
+    display: grid;
+    place-items: center;
+    padding-inline: 16px;
+    box-sizing: border-box;
+  }
+  main {
+    width: 100%;
+    max-width: 34rem;
+    display: grid;
+    gap: 1.25rem;
+  }
+  .eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0;
+  }
+  h1 {
+    font-size: clamp(2.75rem, 11vw, 4.5rem);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  h1 .comma { color: var(--accent); }
+  p.lede {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--muted);
+    margin: 0;
+    font-weight: 500;
+  }
+  pre {
+    margin: 0;
+    background: var(--code-bg);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 1rem 1.1rem;
+    overflow-x: auto;
+    font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--ink);
+  }
+  pre .k { color: var(--accent); }
+  pre .c { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">test-cloud-cc · index.html</p>
+  <h1>hello<span class="comma">,</span> world</h1>
+  <p class="lede">这是 test-cloud-cc 仓库的第一个静态页面，没有构建步骤，也不依赖任何框架。</p>
+  <pre><code><span class="c">/* K&amp;R, 1978 */</span>
+<span class="k">main</span>()
+{
+    printf("hello, world\n");
+}</code></pre>
+</main>
+</body>
+</html>
